@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Glass Bottles — That Random Store" />
+  <title>Bottles | That Random Store</title>
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body>
+  <div class="page">
+    
+    <div id="header"></div>
+    <div class="page-title">
+      <h1>BOTTLES</h1>
+    </div>
+    <main class="product-detail">
+       <div class="image-container">
+            <img id="product-image" src="../images/bottles_yellow.jpeg" alt="Bottles" width="400" height="300">
+          </div>
+      <div>
+        <p class="product-detail__breadcrumb">
+          <a href="../index.html">Home</a> / Insulated
+        </p>
+        <h1 class="product-detail__title">Insulated</h1>
+        <p class="product-detail__price">₹225</p>
+        <p class="product-detail__striked_price" style="text-decoration: line-through;">₹399</p>
+        <p class="product-detail__description">
+          Beautiful, durable glass bottles for storing and serving water, fresh juices,
+          or infused drinks.
+        </p>
+        <div class="product-detail__meta">
+          <span><strong>Material:</strong> Borosilicate glass</span>
+          <span><strong>Capacity:</strong> 400 ml</span>
+          <div class="product-option">
+            <label for="color"><strong>Color:</strong></label>
+
+            <select id="color">
+              <option value="yellow">Yellow</option>
+              <option value="pink">Pink</option>
+             <option value="blue">Blue</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="product-detail__image">Mini</div>
+      <div>
+        <p class="product-detail__breadcrumb">
+          <a href="../index.html">Home</a> / Mini
+        </p>
+        <h1 class="product-detail__title">Mini Bottles</h1>
+        <p class="product-detail__price">₹350</p>
+        <p class="product-detail__striked_price" style="text-decoration: line-through;">₹499</p>
+        <p class="product-detail__description">
+          Beautiful, durable glass bottles for storing and serving water, fresh juices,
+          or infused drinks.
+        </p>
+        <div class="product-detail__meta">
+          <span><strong>Material:</strong> Borosilicate glass</span>
+          <span><strong>Capacity:</strong> 150 ml</span>
+          <div class="product-option">
+            <label for="color"><strong>Color:</strong></label>
+
+            <select id="color">
+              <option value="yellow">Yellow</option>
+              <option value="pink">Pink</option>
+             <option value="blue">Blue</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </main>
+
+
+    <div id = "related-section"></div>
+    <div id="footer"></div>
+
+    <script>
+        async function loadIncludes() {
+          const relate_section = await fetch("relates.html");
+            document.getElementById("related-section").innerHTML = await relate_section.text();
+
+          const footer = await fetch("footer.html");
+            document.getElementById("footer").innerHTML = await footer.text();
+          
+          const header = await fetch("headers.html");
+            document.getElementById("header").innerHTML = await header.text();  
+
+
+        }
+    loadIncludes();
+  </script>
+  <script src="../js/script.js"></script>
+
+    
+
+   
+  </div>
+</body>
+</html>

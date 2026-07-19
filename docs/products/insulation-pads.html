@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Insulation Pads — That Random Store" />
+  <title>Insulation Pads | That Random Store</title>
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body>
+  <div class="page">
+    <div id="header"></div>
+    <div class="page-title">
+      <h1>Insulation Pads</h1>
+    </div>
+
+    <main class="product-detail">
+      <div class="product-detail__image">Square Insulation Pads</div>
+      <div>
+        <p class="product-detail__breadcrumb">
+          <a href="../index.html">Home</a> / Insulation Pads
+        </p>
+        <h1 class="product-detail__title">Sqaured Insulation Pads</h1>
+        <p class="product-detail__price">₹275</p>
+        <p class="product-detail__striked_price" style="text-decoration: line-through;">₹399</p>
+        <p class="product-detail__description">
+          Protect your countertops and dining table from heat damage with these
+          practical insulation pads. Designed to withstand hot pans, casseroles,
+          and serving dishes straight from the stove or oven. Non-slip backing
+          keeps them firmly in place during use.
+        </p>
+        <div class="product-detail__meta">
+          <span><strong>Material:</strong> Silicone / heat-resistant fabric</span>
+          <span><strong>Size:</strong> 20 cm × 20 cm (set of 2)</span>
+          <span><strong>Shape:</strong> Square</span>
+        </div>
+        <button class="product-detail__btn" type="button">Add to Cart</button>
+      </div>
+
+      <div class="product-detail__image">Insulation Pads - Circle</div>
+      <div>
+        <p class="product-detail__breadcrumb">
+          <a href="../index.html">Home</a> / Insulation Pads
+        </p>
+        <h1 class="product-detail__title">Insulation Pads - Circle</h1>
+        <p class="product-detail__price">₹250</p>
+        <p class="product-detail__striked_price" style="text-decoration: line-through;">₹349</p>
+        <p class="product-detail__description">
+          Protect your countertops and dining table from heat damage with these
+          practical insulation pads. Designed to withstand hot pans, casseroles,
+          and serving dishes straight from the stove or oven. Non-slip backing
+          keeps them firmly in place during use.
+        </p>
+        <div class="product-detail__meta">
+          <span><strong>Material:</strong> Silicone / heat-resistant fabric</span>
+          <span><strong>Size:</strong> 20 cm × 20 cm (set of 2)</span>
+          <span><strong>Shape:</strong> Circle</span>
+        </div>
+        <button class="product-detail__btn" type="button">Add to Cart</button>
+      </div>
+
+      <div class="product-detail__image">Square Insulation Pads</div>
+      <div>
+        <p class="product-detail__breadcrumb">
+          <a href="../index.html">Home</a> / Insulation Pads
+        </p>
+        <h1 class="product-detail__title">Sqaured Insulation Pads</h1>
+        <p class="product-detail__price">₹275</p>
+        <p class="product-detail__striked_price" style="text-decoration: line-through;">₹399</p>
+        <p class="product-detail__description">
+          Protect your countertops and dining table from heat damage with these
+          practical insulation pads. Designed to withstand hot pans, casseroles,
+          and serving dishes straight from the stove or oven. Non-slip backing
+          keeps them firmly in place during use.
+        </p>
+        <div class="product-detail__meta">
+          <span><strong>Material:</strong> Silicone / heat-resistant fabric</span>
+          <span><strong>Size:</strong> 20 cm × 20 cm (set of 2)</span>
+          <span><strong>Shape:</strong> Square</span>
+        </div>
+        <button class="product-detail__btn" type="button">Add to Cart</button>
+      </div>
+
+      <div class="product-detail__image">Insulation Pads - Circle</div>
+      <div>
+        <p class="product-detail__breadcrumb">
+          <a href="../index.html">Home</a> / Insulation Pads
+        </p>
+        <h1 class="product-detail__title">Insulation Pads - Circle</h1>
+        <p class="product-detail__price">₹250</p>
+        <p class="product-detail__striked_price" style="text-decoration: line-through;">₹349</p>
+        <p class="product-detail__description">
+          Protect your countertops and dining table from heat damage with these
+          practical insulation pads. Designed to withstand hot pans, casseroles,
+          and serving dishes straight from the stove or oven. Non-slip backing
+          keeps them firmly in place during use.
+        </p>
+        <div class="product-detail__meta">
+          <span><strong>Material:</strong> Silicone / heat-resistant fabric</span>
+          <span><strong>Size:</strong> 20 cm × 20 cm (set of 2)</span>
+          <span><strong>Shape:</strong> Circle</span>
+        </div>
+        <button class="product-detail__btn" type="button">Add to Cart</button>
+      </div>
+    </main>
+
+     <div id = "related-section"></div>
+    <div id="footer"></div>
+
+    <script>
+        async function loadIncludes() {
+          const relate_section = await fetch("relates.html");
+            document.getElementById("related-section").innerHTML = await relate_section.text();
+
+          const footer = await fetch("footer.html");
+            document.getElementById("footer").innerHTML = await footer.text();
+          
+          const header = await fetch("headers.html");
+            document.getElementById("header").innerHTML = await header.text();  
+
+
+        }
+    loadIncludes();
+  </script>
+  </div>
+</body>
+</html>
