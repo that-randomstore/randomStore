@@ -1,0 +1,19 @@
+{
+  "sippers": [
+    "sipper_placeholder.jpg",
+    "sipper_placeholder_2.jpg"
+  ],
+  "bottles": [
+    "bottles.jpeg",
+    "bottles_yellow.jpeg",
+    "bottle_placeholder.jpg",
+    "bottle_placeholder_2.jpg"
+  ],
+  "kitchenWare": [
+    "kitchenWare_placeholder.jpg",
+    "kitchenWare_placeholder_2.jpg"
+  ],
+  "giftBoxes": [
+    "hero_image_2.png"
+  ]
+}

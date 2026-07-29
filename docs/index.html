@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="That Random Store — curated handcrafted finds from markets around the world." />
+  <title>That Random Store</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div class="page">
+    <div id="site-header"></div>
+
+    <section class="hero" aria-label="Welcome">
+      <img
+        class="hero__image"
+        src="images/hero_image_2.png"
+        alt="Colorful artisan market with handcrafted ceramics and pottery"
+      />
+      <div class="hero__overlay" aria-hidden="true"></div>
+      <div class="hero__content">
+        <h1 class="hero__title">That Random Store</h1>
+        <a href="index.html" class="hero__logo">
+          <img src="images/logo.png" alt="" class="hero__logo-img" width="200" height="72" />
+        </a>
+        <p class="hero__tagline">Random curated finds for your personal space</p>
+        <a class="hero__cta" href="#handcrafted">Explore Collection</a>
+      </div>
+    </section>
+
+    <section id="handcrafted" class="section section--handcrafted">
+      <div class="section--handcrafted__intro">
+        <h2 class="section__title">Handcrafted</h2>
+        <p class="section__subtitle">Four curated categories — each with its own story</p>
+      </div>
+
+      <div class="handcrafted-list">
+      <article id="category-sippers" class="feature-row reveal">
+        <div
+          class="feature-row__media feature-slideshow"
+          data-slideshow-category="sippers"
+          data-images-base="images/"
+          data-alt="Sippers"
+        ></div>
+        <div class="feature-row__body">
+          <h3 class="feature-row__title">Sippers</h3>
+          <p class="feature-row__text">
+            Stylish, reusable sippers for everyday hydration — perfect for home, office, or on the go.
+            Leak-proof, easy to carry, and made for your daily rhythm.
+          </p>
+          <a class="feature-row__link" href="products/sippers.html">View sippers →</a>
+        </div>
+      </article>
+
+      <article id="category-bottles" class="feature-row feature-row--reverse reveal">
+        <div
+          class="feature-row__media feature-slideshow"
+          data-slideshow-category="bottles"
+          data-images-base="images/"
+          data-alt="Insulated bottles"
+        ></div>
+        <div class="feature-row__body">
+          <h3 class="feature-row__title">Bottles</h3>
+          <p class="feature-row__text">
+            Elegant insulated bottles for water, juices, and infused drinks — eco-friendly, durable,
+            and easy to clean. Keep drinks at the right temperature wherever you are.
+          </p>
+          <a class="feature-row__link" href="products/bottles.html">View bottles →</a>
+        </div>
+      </article>
+
+      <article id="category-kitchenware" class="feature-row reveal">
+        <div
+          class="feature-row__media feature-slideshow"
+          data-slideshow-category="kitchenWare"
+          data-images-base="images/"
+          data-alt="Kitchen ware"
+        ></div>
+        <div class="feature-row__body">
+          <h3 class="feature-row__title">Kitchen Ware</h3>
+          <p class="feature-row__text">
+            Heat-resistant insulation pads protect surfaces from hot pans, pots, and serving dishes.
+            Practical pieces that belong on a well-loved countertop.
+          </p>
+          <a class="feature-row__link" href="products/insulation-pads.html">View kitchen ware →</a>
+        </div>
+      </article>
+
+      <article id="category-gift-boxes" class="feature-row feature-row--reverse reveal">
+        <div
+          class="feature-row__media feature-slideshow"
+          data-slideshow-category="giftBoxes"
+          data-images-base="images/"
+          data-alt="Gift boxes"
+        ></div>
+        <div class="feature-row__body">
+          <h3 class="feature-row__title">Gift Boxes</h3>
+          <p class="feature-row__text">
+            Curated gift sets for birthdays, housewarmings, and little surprises — thoughtfully
+            packed and ready to give.
+          </p>
+          <a class="feature-row__link" href="#contact">Enquire about gift boxes →</a>
+        </div>
+      </article>
+
+      </div>
+
+      <div class="coming-soon-banner reveal" role="status">
+        <p class="coming-soon-banner__title">More to come</p>
+        <p class="coming-soon-banner__text">New curated picks are on the way — check back soon!</p>
+      </div>
+    </section>
+
+    <div id="site-footer"></div>
+  </div>
+
+  <script src="js/includes.js" data-root=""></script>
+  <script src="js/slideshow.js" data-slideshow-manifest="data/category-images.json"></script>
+</body>
+</html>
