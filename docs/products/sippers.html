@@ -9,74 +9,68 @@
 </head>
 <body>
   <div class="page">
-    <div id="header"></div>
-    <div class="page-title">
-      <h1>Sippers</h1>
-    </div>
+    <div id="site-header"></div>
 
-    <main class="product-detail">
-      <div class="product-detail__image">Sippers - 1</div>
-      <div>
-        <p class="product-detail__breadcrumb">
-          <a href="../index.html">Home</a> / Sippers
+    <main class="category-page">
+      <header class="category-page__intro">
+        <p class="category-page__breadcrumb">
+          <a href="../index.html">Home</a> / <a href="../index.html#category-sippers">Sippers</a>
         </p>
-        <h1 class="product-detail__title">Sippers-1</h1>
-        <p class="product-detail__price">₹250</p>
-        <p class="product-detail__striked_price" style="text-decoration: line-through;">₹399</p>
-        <p class="product-detail__description">
-          Stay hydrated in style with our curated collection of sippers. Designed for
-          everyday use, these reusable bottles are leak-proof, easy to carry, and
-          available in a range of colours to suit your mood. Ideal for work, gym,
-          travel, or your morning commute.
-        </p>
-        <div class="product-detail__meta">
-          <span><strong>Material:</strong> BPA-free plastic / stainless steel options</span>
-          <span><strong>Capacity:</strong> 500 ml – 750 ml</span>
-          <span><strong>Care:</strong> Hand wash recommended</span>
-        </div>
-        <button class="product-detail__btn" type="button">Add to Cart</button>
-      </div>
-      <div class="product-detail__image">Sippers-2</div>
-      <div>
-        <p class="product-detail__breadcrumb">
-          <a href="../index.html">Home</a> / Sippers
-        </p>
-        <h1 class="product-detail__title">Sippers - 2</h1>
-        <p class="product-detail__price">₹300</p>
-        <p class="product-detail__striked_price" style="text-decoration: line-through;">₹499</p>
-        <p class="product-detail__description">
-          Stay hydrated in style with our curated collection of sippers. Designed for
-          everyday use, these reusable bottles are leak-proof, easy to carry, and
-          available in a range of colours to suit your mood. Ideal for work, gym,
-          travel, or your morning commute.
-        </p>
-        <div class="product-detail__meta">
-          <span><strong>Material:</strong> BPA-free plastic / stainless steel options</span>
-          <span><strong>Capacity:</strong> 500 ml – 750 ml</span>
-          <span><strong>Care:</strong> Hand wash recommended</span>
-        </div>
-        <button class="product-detail__btn" type="button">Add to Cart</button>
+        <h1 class="category-page__title">Sippers</h1>
+        <p class="category-page__lead">Stylish, reusable sippers for everyday hydration.</p>
+      </header>
+
+      <div class="product-grid">
+        <article class="product-card">
+          <div class="product-card__media">
+            <img src="../images/sipper_placeholder.jpg" alt="Sippers style 1" width="400" height="400" />
+          </div>
+          <div class="product-card__body">
+            <h2 class="product-card__title">Sippers — Classic</h2>
+            <div class="product-card__prices">
+              <span class="product-card__price">₹250</span>
+              <span class="product-card__price--was">₹399</span>
+            </div>
+            <p class="product-card__description">
+              Leak-proof, easy to carry, and ideal for work, gym, or travel.
+            </p>
+            <ul class="product-card__meta">
+              <li>500 ml – 750 ml</li>
+              <li>BPA-free / steel options</li>
+            </ul>
+            <div class="product-card__option-slot"></div>
+            <button class="product-card__btn" type="button" data-add-to-cart>Add to cart</button>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div class="product-card__media">
+            <img src="../images/sipper_placeholder_2.jpg" alt="Sippers style 2" width="400" height="400" />
+          </div>
+          <div class="product-card__body">
+            <h2 class="product-card__title">Sippers — Travel</h2>
+            <div class="product-card__prices">
+              <span class="product-card__price">₹300</span>
+              <span class="product-card__price--was">₹499</span>
+            </div>
+            <p class="product-card__description">
+              Compact fit for bags and cup holders with a secure flip lid.
+            </p>
+            <ul class="product-card__meta">
+              <li>500 ml</li>
+              <li>Hand wash recommended</li>
+            </ul>
+            <div class="product-card__option-slot"></div>
+            <button class="product-card__btn" type="button" data-add-to-cart>Add to cart</button>
+          </div>
+        </article>
       </div>
     </main>
 
-    <div id = "related-section"></div>
-    <div id="footer"></div>
+    <div id="related-section"></div>
+    <div id="site-footer"></div>
 
-    <script>
-        async function loadIncludes() {
-          const relate_section = await fetch("relates.html");
-            document.getElementById("related-section").innerHTML = await relate_section.text();
-
-          const footer = await fetch("footer.html");
-            document.getElementById("footer").innerHTML = await footer.text();
-          
-          const header = await fetch("headers.html");
-            document.getElementById("header").innerHTML = await header.text();  
-
-
-        }
-    loadIncludes();
-  </script>
+    <script src="../js/includes.js" data-root="../" data-subpage="true" data-related="relates.html"></script>
   </div>
 </body>
 </html>

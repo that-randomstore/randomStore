@@ -1,0 +1,62 @@
+# Deploy /docs to GitHub Pages with WhatsApp number from Actions secrets (not in git).
+#
+# Setup:
+# 1. Repo → Settings → Secrets and variables → Actions → New secret: WHATSAPP_NUMBER
+#    Value: country code + number, no + (e.g. 918076312944)
+# 2. Repo → Settings → Pages → Build and deployment → Source: GitHub Actions
+# 3. Push to main — workflow builds artifact with generated store-config.local.js
+
+name: Deploy GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Inject store config from secret
+        env:
+          WHATSAPP_NUMBER: ${{ secrets.WHATSAPP_NUMBER }}
+        run: |
+          if [ -z "$WHATSAPP_NUMBER" ]; then
+            echo "::warning::WHATSAPP_NUMBER secret is not set. Cart WhatsApp checkout will be disabled on the live site."
+            exit 0
+          fi
+          cat > docs/js/store-config.local.js <<EOF
+          window.STORE_CONFIG = {
+            storeName: "That Random Store",
+            whatsappNumber: "${WHATSAPP_NUMBER}",
+            currencySymbol: "₹",
+          };
+          EOF
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

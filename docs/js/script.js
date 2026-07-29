@@ -1,12 +1,16 @@
-const image = document.getElementById("product-image");
-const color = document.getElementById("color");
-
-const images = {
-    yellow: "../images/bottles_yellow.jpeg",
-    pink: "../images/bottles.jpeg",
-    blue: "../images/bottles.jpeg"
+const colorImages = {
+  yellow: "../images/bottles_yellow.jpeg",
+  pink: "../images/bottles.jpeg",
+  blue: "../images/bottles.jpeg",
 };
 
-color.addEventListener("change", function () {
-    image.src = images[this.value];
+document.querySelectorAll(".product-card").forEach((card) => {
+  const image = card.querySelector("[data-product-image]");
+  const colorSelect = card.querySelector("[data-color-select]");
+  if (!image || !colorSelect) return;
+
+  colorSelect.addEventListener("change", () => {
+    const next = colorImages[colorSelect.value];
+    if (next) image.src = next;
+  });
 });

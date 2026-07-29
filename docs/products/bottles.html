@@ -3,98 +3,143 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Glass Bottles — That Random Store" />
+  <meta name="description" content="Bottles — That Random Store" />
   <title>Bottles | That Random Store</title>
   <link rel="stylesheet" href="../css/styles.css" />
 </head>
 <body>
   <div class="page">
-    
-    <div id="header"></div>
-    <div class="page-title">
-      <h1>BOTTLES</h1>
-    </div>
-    <main class="product-detail">
-       <div class="image-container">
-            <img id="product-image" src="../images/bottles_yellow.jpeg" alt="Bottles" width="400" height="300">
-          </div>
-      <div>
-        <p class="product-detail__breadcrumb">
-          <a href="../index.html">Home</a> / Insulated
-        </p>
-        <h1 class="product-detail__title">Insulated</h1>
-        <p class="product-detail__price">₹225</p>
-        <p class="product-detail__striked_price" style="text-decoration: line-through;">₹399</p>
-        <p class="product-detail__description">
-          Beautiful, durable glass bottles for storing and serving water, fresh juices,
-          or infused drinks.
-        </p>
-        <div class="product-detail__meta">
-          <span><strong>Material:</strong> Borosilicate glass</span>
-          <span><strong>Capacity:</strong> 400 ml</span>
-          <div class="product-option">
-            <label for="color"><strong>Color:</strong></label>
+    <div id="site-header"></div>
 
-            <select id="color">
-              <option value="yellow">Yellow</option>
-              <option value="pink">Pink</option>
-             <option value="blue">Blue</option>
-            </select>
-          </div>
-        </div>
-      </div>
-      <div class="product-detail__image">Mini</div>
-      <div>
-        <p class="product-detail__breadcrumb">
-          <a href="../index.html">Home</a> / Mini
+    <main class="category-page">
+      <header class="category-page__intro">
+        <p class="category-page__breadcrumb">
+          <a href="../index.html">Home</a> / <a href="../index.html#category-bottles">Bottles</a>
         </p>
-        <h1 class="product-detail__title">Mini Bottles</h1>
-        <p class="product-detail__price">₹350</p>
-        <p class="product-detail__striked_price" style="text-decoration: line-through;">₹499</p>
-        <p class="product-detail__description">
-          Beautiful, durable glass bottles for storing and serving water, fresh juices,
-          or infused drinks.
-        </p>
-        <div class="product-detail__meta">
-          <span><strong>Material:</strong> Borosilicate glass</span>
-          <span><strong>Capacity:</strong> 150 ml</span>
-          <div class="product-option">
-            <label for="color"><strong>Color:</strong></label>
+        <h1 class="category-page__title">Bottles</h1>
+        <p class="category-page__lead">Insulated and glass bottles for drinks at home or on the go.</p>
+      </header>
 
-            <select id="color">
-              <option value="yellow">Yellow</option>
-              <option value="pink">Pink</option>
-             <option value="blue">Blue</option>
-            </select>
+      <div class="product-grid">
+        <article class="product-card">
+          <div class="product-card__media">
+            <img
+              data-product-image
+              src="../images/bottles_yellow.jpeg"
+              alt="Insulated bottle"
+              width="400"
+              height="400"
+            />
           </div>
-        </div>
+          <div class="product-card__body">
+            <h2 class="product-card__title">Insulated</h2>
+            <div class="product-card__prices">
+              <span class="product-card__price">₹225</span>
+              <span class="product-card__price--was">₹399</span>
+            </div>
+            <p class="product-card__description">
+              Keeps drinks at the right temperature — water, juice, or infused sips.
+            </p>
+            <ul class="product-card__meta">
+              <li>Borosilicate glass</li>
+              <li>400 ml</li>
+            </ul>
+            <div class="product-card__option-slot">
+              <div class="product-card__option">
+                <label for="color-insulated">Color</label>
+                <select id="color-insulated" data-color-select>
+                  <option value="yellow">Yellow</option>
+                  <option value="pink">Pink</option>
+                  <option value="blue">Blue</option>
+                </select>
+              </div>
+            </div>
+            <button class="product-card__btn" type="button" data-add-to-cart>Add to cart</button>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div class="product-card__media">
+            <img
+              data-product-image
+              src="../images/bottle_placeholder.jpg"
+              alt="Mini bottle"
+              width="400"
+              height="400"
+            />
+          </div>
+          <div class="product-card__body">
+            <h2 class="product-card__title">Mini Bottles</h2>
+            <div class="product-card__prices">
+              <span class="product-card__price">₹350</span>
+              <span class="product-card__price--was">₹499</span>
+            </div>
+            <p class="product-card__description">
+              Pocket-sized bottle for short outings and desk-side sips.
+            </p>
+            <ul class="product-card__meta">
+              <li>Borosilicate glass</li>
+              <li>150 ml</li>
+            </ul>
+            <div class="product-card__option-slot">
+              <div class="product-card__option">
+                <label for="color-mini">Color</label>
+                <select id="color-mini" data-color-select>
+                  <option value="yellow">Yellow</option>
+                  <option value="pink">Pink</option>
+                  <option value="blue">Blue</option>
+                </select>
+              </div>
+            </div>
+            <button class="product-card__btn" type="button" data-add-to-cart>Add to cart</button>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div class="product-card__media">
+            <img src="../images/bottles.jpeg" alt="Everyday bottle" width="400" height="400" />
+          </div>
+          <div class="product-card__body">
+            <h2 class="product-card__title">Everyday Bottle</h2>
+            <div class="product-card__prices">
+              <span class="product-card__price">₹275</span>
+              <span class="product-card__price--was">₹425</span>
+            </div>
+            <p class="product-card__description">Lightweight daily bottle in a soft finish.</p>
+            <ul class="product-card__meta">
+              <li>500 ml</li>
+            </ul>
+            <div class="product-card__option-slot"></div>
+            <button class="product-card__btn" type="button" data-add-to-cart>Add to cart</button>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div class="product-card__media">
+            <img src="../images/bottle_placeholder_2.jpg" alt="Weekender bottle" width="400" height="400" />
+          </div>
+          <div class="product-card__body">
+            <h2 class="product-card__title">Weekender</h2>
+            <div class="product-card__prices">
+              <span class="product-card__price">₹399</span>
+              <span class="product-card__price--was">₹549</span>
+            </div>
+            <p class="product-card__description">Extra capacity for day trips and long commutes.</p>
+            <ul class="product-card__meta">
+              <li>750 ml</li>
+            </ul>
+            <div class="product-card__option-slot"></div>
+            <button class="product-card__btn" type="button" data-add-to-cart>Add to cart</button>
+          </div>
+        </article>
       </div>
     </main>
 
+    <div id="related-section"></div>
+    <div id="site-footer"></div>
 
-    <div id = "related-section"></div>
-    <div id="footer"></div>
-
-    <script>
-        async function loadIncludes() {
-          const relate_section = await fetch("relates.html");
-            document.getElementById("related-section").innerHTML = await relate_section.text();
-
-          const footer = await fetch("footer.html");
-            document.getElementById("footer").innerHTML = await footer.text();
-          
-          const header = await fetch("headers.html");
-            document.getElementById("header").innerHTML = await header.text();  
-
-
-        }
-    loadIncludes();
-  </script>
-  <script src="../js/script.js"></script>
-
-    
-
-   
+    <script src="../js/includes.js" data-root="../" data-subpage="true" data-related="relates.html"></script>
+    <script src="../js/script.js"></script>
   </div>
 </body>
 </html>
