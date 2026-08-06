@@ -85,10 +85,22 @@
     }
 
     await Promise.all(tasks);
+    await loadProducts(root);
     initScrollReveal();
     await loadStoreConfig(root);
     await loadScript(`${root}js/cart.js`);
     window.initStoreCart?.();
+  }
+
+  async function loadProducts(root) {
+    const grid = document.querySelector("[data-product-grid]");
+    if (!grid) return;
+    try {
+      await loadScript(`${root}js/products.js`);
+      await window.renderProductGrid?.(root, grid);
+    } catch {
+      /* offline or file:// */
+    }
   }
 
   async function loadStoreConfig(root) {

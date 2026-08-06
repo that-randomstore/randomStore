@@ -1,0 +1,124 @@
+{
+  "products": [
+    {
+      "id": "insulated",
+      "category": "bottles",
+      "title": "Insulated",
+      "price": 225,
+      "wasPrice": 399,
+      "description": "Keeps drinks at the right temperature — water, juice, or infused sips.",
+      "meta": ["Borosilicate glass", "400 ml"],
+      "image": "images/bottles_inventory/bottles_yellow.jpeg",
+      "alt": "Insulated bottle",
+      "colors": {
+        "yellow": { "label": "Yellow", "image": "images/bottles_inventory/bottles_yellow.jpeg" },
+        "pink": { "label": "Pink", "image": "images/bottles_inventory/bottles.jpeg" },
+        "blue": { "label": "Blue", "image": "images/bottles_inventory/bottles.jpeg" }
+      }
+    },
+    {
+      "id": "mini-bottles",
+      "category": "bottles",
+      "title": "Mini Bottles",
+      "price": 350,
+      "wasPrice": 499,
+      "description": "Pocket-sized bottle for short outings and desk-side sips.",
+      "meta": ["Borosilicate glass", "150 ml"],
+      "image": "images/bottles_inventory/bottle_placeholder.jpg",
+      "alt": "Mini bottle",
+      "colors": {
+        "yellow": { "label": "Yellow", "image": "images/bottles_inventory/bottle_placeholder.jpg" },
+        "pink": { "label": "Pink", "image": "images/bottles_inventory/bottles.jpeg" },
+        "blue": { "label": "Blue", "image": "images/bottles_inventory/bottles.jpeg" }
+      }
+    },
+    {
+      "id": "everyday-bottle",
+      "category": "bottles",
+      "title": "Everyday Bottle",
+      "price": 275,
+      "wasPrice": 425,
+      "description": "Lightweight daily bottle in a soft finish.",
+      "meta": ["500 ml"],
+      "image": "images/bottles_inventory/bottles.jpeg",
+      "alt": "Everyday bottle"
+    },
+    {
+      "id": "weekender",
+      "category": "bottles",
+      "title": "Weekender",
+      "price": 399,
+      "wasPrice": 549,
+      "description": "Extra capacity for day trips and long commutes.",
+      "meta": ["750 ml"],
+      "image": "images/bottles_inventory/bottle_placeholder_2.jpg",
+      "alt": "Weekender bottle"
+    },
+    {
+      "id": "square-pads",
+      "category": "kitchenware",
+      "title": "Square Pads",
+      "price": 275,
+      "wasPrice": 399,
+      "description": "Protect counters from hot pans and serving dishes.",
+      "meta": ["20 cm × 20 cm (set of 2)", "Silicone / heat-resistant fabric"],
+      "image": "images/kitchenware_inventory/kitchenWare_placeholder.jpg",
+      "alt": "Square insulation pads"
+    },
+    {
+      "id": "round-pads",
+      "category": "kitchenware",
+      "title": "Round Pads",
+      "price": 250,
+      "wasPrice": 349,
+      "description": "Non-slip backing keeps pads steady under hot cookware.",
+      "meta": ["20 cm diameter (set of 2)", "Circle shape"],
+      "image": "images/kitchenware_inventory/kitchenWare_placeholder_2.jpg",
+      "alt": "Round insulation pads"
+    },
+    {
+      "id": "square-set-sage",
+      "category": "kitchenware",
+      "title": "Square Set — Sage",
+      "price": 299,
+      "wasPrice": 449,
+      "description": "Muted tones for a calm kitchen counter.",
+      "meta": ["Set of 4"],
+      "image": "images/kitchenware_inventory/kitchenWare_placeholder.jpg",
+      "alt": "Square pad set"
+    },
+    {
+      "id": "round-set-terracotta",
+      "category": "kitchenware",
+      "title": "Round Set — Terracotta",
+      "price": 289,
+      "wasPrice": 429,
+      "description": "Warm colorway for dining table protection.",
+      "meta": ["Set of 4"],
+      "image": "images/kitchenware_inventory/kitchenWare_placeholder_2.jpg",
+      "alt": "Round pad set"
+    },
+    {
+      "id": "sippers-classic",
+      "category": "sippers",
+      "title": "Sippers — Classic",
+      "price": 250,
+      "wasPrice": 399,
+      "description": "Leak-proof, easy to carry, and ideal for work, gym, or travel.",
+      "meta": ["500 ml – 750 ml", "BPA-free / steel options"],
+      "image": "images/sipper_inventory/sipper_placeholder.jpg",
+      "alt": "Sippers style 1"
+    },
+    {
+      "id": "sippers-travel",
+      "category": "sippers",
+      "title": "Sippers — Travel",
+      "price": 300,
+      "wasPrice": 499,
+      "description": "Compact fit for bags and cup holders with a secure flip lid.",
+      "meta": ["500 ml", "Hand wash recommended"],
+      "image": "images/sipper_inventory/sipper_placeholder_2.jpg",
+      "alt": "Sippers style 2"
+    }
+  ]
+}
