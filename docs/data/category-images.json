@@ -1,17 +1,15 @@
 {
   "sippers": [
-    "sipper_placeholder.jpg",
-    "sipper_placeholder_2.jpg"
+    "sipper_brown_strap.jpg",
+    "white_glass_sipper.jpg"
   ],
   "bottles": [
     "bottles.jpeg",
     "bottles_yellow.jpeg",
-    "bottle_placeholder.jpg",
-    "bottle_placeholder_2.jpg"
+    "mini_bottles_category.jpg"
   ],
   "kitchenWare": [
-    "kitchenWare_placeholder.jpg",
-    "kitchenWare_placeholder_2.jpg"
+    "kitchenware_category.jpg"
   ],
   "giftBoxes": [
     "hero_image_2.png"
