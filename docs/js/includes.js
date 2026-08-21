@@ -21,12 +21,10 @@
       );
       html = html.replace(
         "{{HEADER_BRAND}}",
-        subpage
-          ? `<a href="${root}index.html" class="site-header__brand" aria-label="That Random Store home">
-              <img src="${root}images/logo.png" alt="" class="site-header__brand-logo" width="44" height="44" />
-              <span class="site-header__brand-text">That Random Store</span>
-            </a>`
-          : ""
+        `<a href="${root}index.html" class="site-header__brand" aria-label="That Random Store home">
+          <img src="${root}images/logo.png" alt="" class="site-header__brand-logo" width="44" height="44" />
+          <span class="site-header__brand-text">That Random Store</span>
+        </a>`
       );
       target.innerHTML = html;
     } catch {

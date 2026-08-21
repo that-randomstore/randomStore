@@ -113,12 +113,11 @@
     return `TRS-${y}${m}${day}-${rand}`;
   }
 
-  function buildWhatsAppUrl(items, orderId) {
+  function buildWhatsAppUrl(items, orderId, details) {
     const { storeName, whatsappNumber } = config();
     if (!whatsappNumber) return null;
 
     const ref = orderId || createOrderId();
-    // Edit the WhatsApp order message below (lines array).
     const lines = [
       `*Order reference: ${ref}*`,
       "",
@@ -131,7 +130,13 @@
       "",
       `*Total: ${formatMoney(cartTotal(items))}*`,
       "",
-      "Please confirm availability, delivery, and payment. Thank you!",
+      "*Delivery details:*",
+      `Name: ${details.name}`,
+      `Phone: ${details.phone}`,
+      `Email: ${details.email || "—"}`,
+      `Address: ${details.address}`,
+      "",
+      "Please confirm my order. Thank you!",
     ];
 
     const text = encodeURIComponent(lines.join("\n"));
@@ -158,10 +163,29 @@
             <span>Total</span>
             <strong data-cart-total>${formatMoney(0)}</strong>
           </div>
-          <a class="cart-drawer__whatsapp" data-cart-whatsapp href="#" target="_blank" rel="noopener noreferrer">
-            Place order on WhatsApp
-          </a>
-          <p class="cart-drawer__note">You'll chat with us to confirm your order and delivery.</p>
+          <form class="cart-checkout" data-cart-checkout hidden novalidate>
+            <p class="cart-checkout__title">Delivery details</p>
+            <label class="cart-checkout__field">
+              <span>Name</span>
+              <input type="text" name="name" required autocomplete="name" />
+            </label>
+            <label class="cart-checkout__field">
+              <span>Phone</span>
+              <input type="tel" name="phone" required autocomplete="tel" />
+            </label>
+            <label class="cart-checkout__field">
+              <span>Email</span>
+              <input type="email" name="email" autocomplete="email" />
+            </label>
+            <label class="cart-checkout__field">
+              <span>Address</span>
+              <textarea name="address" rows="3" required autocomplete="street-address"></textarea>
+            </label>
+            <button class="cart-drawer__whatsapp" type="submit" data-cart-whatsapp>
+              Place order on WhatsApp
+            </button>
+          </form>
+          <p class="cart-drawer__note">Add your details, then send the order on WhatsApp for confirmation.</p>
           <button type="button" class="cart-drawer__clear" data-cart-clear>Clear cart</button>
         </footer>
       </aside>
@@ -175,6 +199,7 @@
       items: root.querySelector("[data-cart-items]"),
       total: root.querySelector("[data-cart-total]"),
       whatsapp: root.querySelector("[data-cart-whatsapp]"),
+      checkout: root.querySelector("[data-cart-checkout]"),
       toast: root.querySelector("[data-cart-toast]"),
       counts: () => document.querySelectorAll("[data-cart-count]"),
     };
@@ -220,14 +245,13 @@
     els.total.textContent = formatMoney(cartTotal(items));
 
     const canCheckout = items.length > 0 && config().whatsappNumber;
+    els.checkout?.toggleAttribute("hidden", !canCheckout);
     if (canCheckout) {
-      els.whatsapp.href = "#";
-      els.whatsapp.classList.remove("is-disabled");
-      els.whatsapp.removeAttribute("aria-disabled");
+      els.whatsapp?.classList.remove("is-disabled");
+      els.whatsapp?.removeAttribute("aria-disabled");
     } else {
-      els.whatsapp.href = "#";
-      els.whatsapp.classList.add("is-disabled");
-      els.whatsapp.setAttribute("aria-disabled", "true");
+      els.whatsapp?.classList.add("is-disabled");
+      els.whatsapp?.setAttribute("aria-disabled", "true");
     }
 
     if (!items.length) {
@@ -264,6 +288,30 @@
   }
 
   function bindEvents() {
+    document.addEventListener("submit", (event) => {
+      const form = event.target.closest("[data-cart-checkout]");
+      if (!form) return;
+      event.preventDefault();
+      if (els.whatsapp?.classList.contains("is-disabled")) return;
+
+      const items = loadCart();
+      if (!items.length) return;
+      if (!form.reportValidity()) return;
+
+      const data = new FormData(form);
+      const details = {
+        name: String(data.get("name") || "").trim(),
+        phone: String(data.get("phone") || "").trim(),
+        email: String(data.get("email") || "").trim(),
+        address: String(data.get("address") || "").trim(),
+      };
+
+      const result = buildWhatsAppUrl(items, null, details);
+      if (!result) return;
+      window.open(result.url, "_blank", "noopener,noreferrer");
+      showToast(`Reference ${result.orderId} — sent on WhatsApp`);
+    });
+
     document.addEventListener("click", (event) => {
       if (event.target.closest("[data-cart-open]")) {
         setDrawerOpen(true);
@@ -307,21 +355,6 @@
         refresh();
         return;
       }
-
-      const waBtn = event.target.closest("[data-cart-whatsapp]");
-      if (waBtn) {
-        if (waBtn.classList.contains("is-disabled")) {
-          event.preventDefault();
-          return;
-        }
-        event.preventDefault();
-        const items = loadCart();
-        if (!items.length) return;
-        const { url, orderId } = buildWhatsAppUrl(items);
-        window.open(url, "_blank", "noopener,noreferrer");
-        showToast(`Reference ${orderId} — mention this in WhatsApp`);
-        return;
-      }
     });
 
     document.addEventListener("keydown", (event) => {
@@ -329,9 +362,22 @@
     });
   }
 
+  function mountFooterWhatsApp() {
+    const link = document.querySelector("[data-footer-whatsapp]");
+    if (!link) return;
+    const { whatsappNumber } = config();
+    if (!whatsappNumber) {
+      link.closest(".site-footer__item")?.remove();
+      return;
+    }
+    const text = encodeURIComponent("Hi, can I get some assitance.");
+    link.href = `https://wa.me/${whatsappNumber}?text=${text}`;
+  }
+
   function initStoreCart() {
     ensureDom();
     mountHeaderButton();
+    mountFooterWhatsApp();
     bindEvents();
     refresh();
   }

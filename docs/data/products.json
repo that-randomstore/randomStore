@@ -8,12 +8,12 @@
       "wasPrice": 399,
       "description": "Keeps drinks at the right temperature — water, juice, or infused sips.",
       "meta": ["Borosilicate glass", "400 ml"],
-      "image": "images/bottles_inventory/bottles_yellow.jpeg",
+      "image": "images/bottles_inventory/yellow_400_bottle.jpg",
       "alt": "Insulated bottle",
       "colors": {
-        "yellow": { "label": "Yellow", "image": "images/bottles_inventory/bottles_yellow.jpeg" },
-        "pink": { "label": "Pink", "image": "images/bottles_inventory/bottles.jpeg" },
-        "blue": { "label": "Blue", "image": "images/bottles_inventory/bottles.jpeg" }
+        "yellow": { "label": "Yellow", "image": "images/bottles_inventory/yellow_400_bottle.jpg" },
+        "pink": { "label": "Pink", "image": "images/bottles_inventory/pink_400_bottle.jpg" },
+        "blue": { "label": "Blue", "image": "images/bottles_inventory/blue_400_bottle.jpg" }
       }
     },
     {
@@ -62,7 +62,18 @@
       "wasPrice": 399,
       "description": "Protect counters from hot pans and serving dishes.",
       "meta": ["20 cm × 20 cm (set of 2)", "Silicone / heat-resistant fabric"],
-      "image": "images/kitchenware_inventory/kitchenWare_placeholder.jpg",
+      "image": "images/kitchenware_inventory/red_square_insulation_pad.jpg",
+      "alt": "Square insulation pads"
+    },
+    {
+      "id": "square-pads-2",
+      "category": "kitchenware",
+      "title": "Square Pads",
+      "price": 275,
+      "wasPrice": 399,
+      "description": "Protect counters from hot pans and serving dishes.",
+      "meta": ["20 cm × 20 cm (set of 2)", "Silicone / heat-resistant fabric"],
+      "image": "images/kitchenware_inventory/brown_square_insulation_pad.jpg",
       "alt": "Square insulation pads"
     },
     {
@@ -106,7 +117,7 @@
       "wasPrice": 399,
       "description": "Leak-proof, easy to carry, and ideal for work, gym, or travel.",
       "meta": ["500 ml – 750 ml", "BPA-free / steel options"],
-      "image": "images/sipper_inventory/sipper_placeholder.jpg",
+      "image": "images/sipper_inventory/white_glass_sipper.jpg",
       "alt": "Sippers style 1"
     },
     {
@@ -117,7 +128,7 @@
       "wasPrice": 499,
       "description": "Compact fit for bags and cup holders with a secure flip lid.",
       "meta": ["500 ml", "Hand wash recommended"],
-      "image": "images/sipper_inventory/sipper_placeholder_2.jpg",
+      "image": "images/sipper_inventory/sipper_brown_strap.jpg",
       "alt": "Sippers style 2"
     }
   ]
