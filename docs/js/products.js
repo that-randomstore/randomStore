@@ -36,7 +36,7 @@
   function renderCard(product, root) {
     const imgAttr = product.colors ? " data-product-image" : "";
     const desc = product.description
-      ? `<p class="product-card__description">${esc(product.description)}</p>`
+      ? `<div class="product-card__desc-wrap"><p class="product-card__description">${esc(product.description)}</p><button type="button" class="product-card__desc-toggle" data-desc-toggle>Show more</button></div>`
       : "";
     return `<article class="product-card" data-category="${esc(product.category)}">
       <div class="product-card__media">
@@ -99,6 +99,13 @@
     grid.innerHTML = list.map((p) => renderCard(p, root)).join("");
     initColorSelects(root, grid, list);
     initCategoryFilter();
+    grid.addEventListener("click", (e) => {
+      const btn = e.target.closest("[data-desc-toggle]");
+      if (!btn) return;
+      const wrap = btn.closest(".product-card__desc-wrap");
+      const open = wrap.classList.toggle("is-expanded");
+      btn.textContent = open ? "Show less" : "Show more";
+    });
   }
 
   window.renderProductGrid = renderProductGrid;
