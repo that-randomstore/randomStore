@@ -17,8 +17,27 @@
     </div>`;
   }
 
+  function renderSpecs(product) {
+    const specs = product.specs || product.meta;
+    if (!specs?.length) return "";
+    return `<p class="product-card__specs">${specs.map(esc).join(" · ")}</p>`;
+  }
+
+  function renderTags(items) {
+    if (!items?.length) return "";
+    return `<ul class="product-card__tags">${items.map((t) => `<li>${esc(t)}</li>`).join("")}</ul>`;
+  }
+
+  function renderCare(product) {
+    if (!product.instructions?.length) return "";
+    return `<details class="product-card__details"><summary>Details & care</summary><p class="product-card__care">${product.instructions.map(esc).join(" · ")}</p></details>`;
+  }
+
   function renderCard(product, root) {
     const imgAttr = product.colors ? " data-product-image" : "";
+    const desc = product.description
+      ? `<p class="product-card__description">${esc(product.description)}</p>`
+      : "";
     return `<article class="product-card" data-category="${esc(product.category)}">
       <div class="product-card__media">
         <img${imgAttr} src="${root}${esc(product.image)}" alt="${esc(product.alt || product.title)}" width="400" height="400" />
@@ -29,8 +48,10 @@
           <span class="product-card__price">₹${product.price}</span>
           ${product.wasPrice ? `<span class="product-card__price--was">₹${product.wasPrice}</span>` : ""}
         </div>
-        <p class="product-card__description">${esc(product.description)}</p>
-        <ul class="product-card__meta">${product.meta.map((m) => `<li>${esc(m)}</li>`).join("")}</ul>
+        ${renderSpecs(product)}
+        ${desc}
+        ${renderTags(product.perfectFor)}
+        ${renderCare(product)}
         <div class="product-card__option-slot">${renderOption(product, root)}</div>
         <button class="product-card__btn" type="button" data-add-to-cart>Add to cart</button>
       </div>
