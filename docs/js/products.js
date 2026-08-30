@@ -33,17 +33,23 @@
     return `<details class="product-card__details"><summary>Details & care</summary><p class="product-card__care">${product.instructions.map(esc).join(" · ")}</p></details>`;
   }
 
+  function productUrl(product, root) {
+    const q = new URLSearchParams({ category: product.category, id: product.id });
+    return `${root}products/product.html?${q}`;
+  }
+
   function renderCard(product, root) {
+    const url = productUrl(product, root);
     const imgAttr = product.colors ? " data-product-image" : "";
     const desc = product.description
       ? `<div class="product-card__desc-wrap"><p class="product-card__description">${esc(product.description)}</p><button type="button" class="product-card__desc-toggle" data-desc-toggle>Show more</button></div>`
       : "";
     return `<article class="product-card" data-category="${esc(product.category)}">
       <div class="product-card__media">
-        <img${imgAttr} src="${root}${esc(product.image)}" alt="${esc(product.alt || product.title)}" width="400" height="400" />
+        <a href="${url}" class="product-card__link"><img${imgAttr} src="${root}${esc(product.image)}" alt="${esc(product.alt || product.title)}" width="400" height="400" /></a>
       </div>
       <div class="product-card__body">
-        <h2 class="product-card__title">${esc(product.title)}</h2>
+        <h2 class="product-card__title"><a href="${url}">${esc(product.title)}</a></h2>
         <div class="product-card__prices">
           <span class="product-card__price">₹${product.price}</span>
           ${product.wasPrice ? `<span class="product-card__price--was">₹${product.wasPrice}</span>` : ""}
