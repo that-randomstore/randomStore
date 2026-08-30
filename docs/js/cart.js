@@ -157,13 +157,9 @@
           <h2 id="cart-drawer-title" class="cart-drawer__title">Your cart</h2>
           <button type="button" class="cart-drawer__close" data-cart-close aria-label="Close cart">&times;</button>
         </header>
-        <div class="cart-drawer__body" data-cart-items></div>
-        <footer class="cart-drawer__footer">
-          <div class="cart-drawer__total-row">
-            <span>Total</span>
-            <strong data-cart-total>${formatMoney(0)}</strong>
-          </div>
-          <form class="cart-checkout" data-cart-checkout hidden novalidate>
+        <div class="cart-drawer__body">
+          <div data-cart-items></div>
+          <form class="cart-checkout" id="cart-checkout-form" data-cart-checkout hidden novalidate>
             <p class="cart-checkout__title">Delivery details</p>
             <label class="cart-checkout__field">
               <span>Name</span>
@@ -179,12 +175,18 @@
             </label>
             <label class="cart-checkout__field">
               <span>Address</span>
-              <textarea name="address" rows="3" required autocomplete="street-address"></textarea>
+              <textarea name="address" rows="2" required autocomplete="street-address"></textarea>
             </label>
-            <button class="cart-drawer__whatsapp" type="submit" data-cart-whatsapp>
-              Place order on WhatsApp
-            </button>
           </form>
+        </div>
+        <footer class="cart-drawer__footer">
+          <div class="cart-drawer__total-row">
+            <span>Total</span>
+            <strong data-cart-total>${formatMoney(0)}</strong>
+          </div>
+          <button class="cart-drawer__whatsapp" type="submit" form="cart-checkout-form" data-cart-whatsapp>
+            Place order on WhatsApp
+          </button>
           <p class="cart-drawer__note">Add your details, then send the order on WhatsApp for confirmation.</p>
           <button type="button" class="cart-drawer__clear" data-cart-clear>Clear cart</button>
         </footer>

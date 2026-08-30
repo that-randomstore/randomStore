@@ -83,11 +83,23 @@
     }
 
     await Promise.all(tasks);
+    await loadProductDetail(root);
     await loadProducts(root);
     initScrollReveal();
     await loadStoreConfig(root);
     await loadScript(`${root}js/cart.js`);
     window.initStoreCart?.();
+  }
+
+  async function loadProductDetail(root) {
+    const main = document.querySelector("[data-product-detail]");
+    if (!main) return;
+    try {
+      await loadScript(`${root}js/product-detail.js`);
+      await window.renderProductDetail?.(root, main);
+    } catch {
+      /* offline or file:// */
+    }
   }
 
   async function loadProducts(root) {
