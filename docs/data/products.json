@@ -28,12 +28,12 @@
       "specs": ["Borosilicate glass", "150 ml"],
       "perfectFor": ["Small servings", "Table settings", "Gifting"],
       "instructions": ["Hand wash only"],
-      "image": "images/bottles_inventory/peach_150_mini_bottle.jpg",
+      "image": "images/bottles_inventory/peach_150_mini_bottle.png",
       "alt": "Mini bottle",
       "colors": {
-        "peach": { "label": "Peach", "image": "images/bottles_inventory/peach_150_mini_bottle.jpg" },
-        "blue": { "label": "Blue", "image": "images/bottles_inventory/blue_150_mini_bottle.jpg" },
-        "green": { "label": "Green", "image": "images/bottles_inventory/green_150_mini_bottle.jpg" }
+        "peach": { "label": "Peach", "image": "images/bottles_inventory/peach_150_mini_bottle.png" },
+        "blue": { "label": "Blue", "image": "images/bottles_inventory/blue_150_mini_bottle.png" },
+        "green": { "label": "Green", "image": "images/bottles_inventory/green_150_mini_bottle.jpeg" }
       }
     },
     {
@@ -43,10 +43,10 @@
       "price": 275,
       "wasPrice": 399,
       "description": "Protect your table while adding a touch of pattern. Designed to sit beneath hot pots, pans, cookware, and serving dishes, this patterned square pad combines everyday kitchen protection with a decorative look.",
-      "specs": ["20 cm × 20 cm (set of 3)", "Silicone / heat-resistant fabric"],
+      "specs": ["20 cm × 20 cm (set of 3)", "heat-resistant fabric", "black motifs"],
       "perfectFor": ["Hot cookware", "Dining tables", "Kitchen counters"],
       "instructions": ["Wipe clean with damp cloth", "Do not machine wash"],
-      "image": "images/kitchenware_inventory/red_square_insulation_pad.jpg",
+      "image": "images/kitchenware_inventory/black_square_insulation_pad.jpeg",
       "alt": "Square insulation pads"
     },
     {
@@ -59,7 +59,7 @@
       "specs": ["20 cm × 20 cm (set of 3)", "Silicone / heat-resistant fabric", "Patterned"],
       "perfectFor": ["Hot cookware", "Dining tables", "Kitchen counters"],
       "instructions": ["Wipe clean with damp cloth", "Do not machine wash"],
-      "image": "images/kitchenware_inventory/red_square_insulation_pad.jpg",
+      "image": "images/kitchenware_inventory/red_square_20_20_insulation_pad.jpeg",
       "alt": "Square insulation pads"
     },
     {
@@ -69,10 +69,10 @@
       "price": 250,
       "wasPrice": 349,
       "description": "Protect your table while adding a touch of pattern. Designed to sit beneath hot pots, pans, cookware, and serving dishes, this patterned round pad combines everyday kitchen protection with a decorative look.",
-      "specs": ["20 cm diameter (set of 3)", "Circle shape", "Patterned"],
+      "specs": ["20cm x 20cm (set of 3)", "Circle shape", "Patterned"],
       "perfectFor": ["Hot cookware", "Dining tables", "Kitchen counters"],
       "instructions": ["Wipe clean with damp cloth", "Do not machine wash"],
-      "image": "images/kitchenware_inventory/kitchenWare_placeholder_2.jpg",
+      "image": "images/kitchenware_inventory/black_round_18_18_insulation_pad.jpeg",
       "alt": "Round insulation pads"
     },
     {
@@ -82,10 +82,10 @@
       "price": 250,
       "wasPrice": 349,
       "description": "Protect your table while adding a touch of pattern. Designed to sit beneath hot pots, pans, cookware, and serving dishes, this patterned round pad combines everyday kitchen protection with a decorative look.",
-      "specs": ["20 cm diameter (set of 3)", "Circle shape", "Patterned"],
+      "specs": ["18cm x 18cm diameter (set of 3)", "Circle shape", "Patterned"],
       "perfectFor": ["Hot cookware", "Dining tables", "Kitchen counters"],
       "instructions": ["Wipe clean with damp cloth", "Do not machine wash"],
-      "image": "images/kitchenware_inventory/kitchenWare_placeholder_2.jpg",
+      "image": "images/kitchenware_inventory/red_round_18_18_insulation_pad.jpeg",
       "alt": "Round insulation pads"
     },
     {
@@ -113,6 +113,574 @@
       "instructions": ["Hand wash only", "Wipe leather grip dry"],
       "image": "images/sipper_inventory/sipper_brown_strap.jpg",
       "alt": "Sippers style 2"
+    },
+    {
+      "id": "insulation-pads-set-1",
+      "category": "gift-boxes",
+      "title": "Round+Squared Patterned Insulation Pad",
+      "price": 420,
+      "wasPrice": 525,
+      "description": "Protect your table while adding a touch of pattern. Designed to sit beneath hot pots, pans, cookware, and serving dishes, this patterned round pad combines everyday kitchen protection with a decorative look.",
+      "specs": ["18cm x 18cm Round (set of 3) ; 20cm x 20cm Square (set of 3)", "Circle+Square shape", "Patterned"],
+      "perfectFor": ["Hot cookware", "Dining tables", "Kitchen counters"],
+      "instructions": ["Wipe clean with damp cloth", "Do not machine wash"],
+      "image":"images/gift_hampers/insulation_pad_set_1.jpeg",
+      "images":[
+        "images/gift_hampers/insulation_pad_set_1.jpeg",
+        "images/kitchenware_inventory/red_round_18_18_insulation_pad.jpeg",
+        "images/kitchenware_inventory/red_square_20_20_insulation_pad.jpeg"
+      ] ,
+      "alt": "insulation pads set 1"
+    },
+    {
+      "id": "insulation-pads-set-2",
+      "category": "gift-boxes",
+      "title": "Round+Squared Patterned Insulation Pad",
+      "price": 420,
+      "wasPrice": 525,
+      "description": "Protect your table while adding a touch of pattern. Designed to sit beneath hot pots, pans, cookware, and serving dishes, this patterned round pad combines everyday kitchen protection with a decorative look.",
+      "specs": ["20cm x 20cm Round (set of 3) ; 20cm x 20cm Square (set of 3)", "Circle+Square shape", "Patterned"],
+      "perfectFor": ["Hot cookware", "Dining tables", "Kitchen counters"],
+      "instructions": ["Wipe clean with damp cloth", "Do not machine wash"],
+      "image": "images/gift_hampers/insulation_pad_set_2.jpeg",
+      "images":[
+        "images/gift_hampers/insulation_pad_set_2.jpeg",
+        "images/kitchenware_inventory/black_round_18_18_insulation_pad.jpeg",
+        "images/kitchenware_inventory/black_square_insulation_pad.jpeg"
+      ] ,
+      "alt": "insulation pads set 1"
+    },
+    {
+      "id": "mini-bottles-set",
+      "category": "gift-boxes",
+      "title": "Mini Insulated Bottle – 150 ml (set of 3)",
+      "price": 735,
+      "wasPrice": 1050,
+      "description": "Small, stylish, and made for little sips. This mini insulated bottle is perfect when you want to carry a small serving of your favourite drink without taking up much space. Its compact size also makes it a charming addition to a table setting or a unique gifting choice.",
+      "specs": ["set of 3","Borosilicate glass", "150 ml"],
+      "perfectFor": ["Small servings", "Table settings", "Gifting"],
+      "instructions": ["Hand wash only"],
+      "image": "images/gift_hampers/mini_bottle_set.png",
+      "images":[
+        "images/gift_hampers/mini_bottle_set.png",
+        "images/bottles_inventory/peach_150_mini_bottle.png",
+        "images/bottles_inventory/blue_150_mini_bottle.png",
+        "images/bottles_inventory/green_150_mini_bottle.jpeg"
+      ],
+      "alt": "Mini bottle set"
+    },
+    {
+      "id": "classic-bottle-sipper-set",
+      "category": "gift-boxes",
+      "title": "Bottle & Sipper Gift Set",
+      "price": 525,
+      "wasPrice": 750,
+      "description": "A ready-to-gift pairing of our everyday glass bottle and sipper — curated in matching colours for personal use or gifting.",
+      "specs": ["400 ml bottle + sipper", "Borosilicate glass"],
+      "perfectFor": ["Gifting", "Office", "Travel"],
+      "instructions": ["Hand wash only", "Not for hot liquids"],
+      "image": "images/gift_hampers/yellow_bottle_transparent_sipper.png",
+      "alt": "Bottle and sipper gift set",
+      "colors": {
+        "yellow": {
+          "label": "Yellow",
+          "image": "images/gift_hampers/yellow_bottle_transparent_sipper.png",
+          "images": [
+            "images/gift_hampers/yellow_bottle_transparent_sipper.png",
+            "images/bottles_inventory/yellow_400_bottle.jpg",
+            "images/sipper_inventory/white_glass_sipper.jpg"
+          ]
+        },
+        "pink": {
+          "label": "Pink",
+          "image": "images/gift_hampers/pink_bottle_transparent_sipper.png",
+          "images": [
+            "images/gift_hampers/pink_bottle_transparent_sipper.png",
+            "images/bottles_inventory/pink_400_bottle.jpg",
+            "images/sipper_inventory/white_glass_sipper.jpg"
+          ]
+      },
+        "blue": {
+          "label": "Blue",
+          "image": "images/gift_hampers/blue_bottle_transparent_sipper.png",
+          "images": [
+            "images/gift_hampers/blue_bottle_transparent_sipper.png",
+            "images/bottles_inventory/blue_400_bottle.jpg",
+            "images/sipper_inventory/white_glass_sipper.jpg"
+          ]
+        }
+      }
+    },
+    {
+      "id": "classic-bottle-leather-grip-sipper-set",
+      "category": "gift-boxes",
+      "title": "Bottle & Leather Grip Sipper Gift Set",
+      "price": 525,
+      "wasPrice": 750,
+      "description": "A ready-to-gift pairing of our everyday glass bottle and leather gripped sipper — curated in matching colours for personal use or gifting.",
+      "specs": ["400 ml bottle + sipper", "Borosilicate glass"],
+      "perfectFor": ["Gifting", "Office", "Travel"],
+      "instructions": ["Hand wash only", "Not for hot liquids"],
+      "image": "images/gift_hampers/yellow_bottle_leather_sipper.png",
+      "alt": "Bottle and sipper gift set",
+      "colors": {
+        "yellow": {
+          "label": "Yellow",
+          "image": "images/gift_hampers/yellow_bottle_leather_sipper.png",
+          "images": [
+            "images/gift_hampers/yellow_bottle_leather_sipper.png",
+            "images/bottles_inventory/yellow_400_bottle.jpg",
+            "images/sipper_inventory/sipper_brown_strap.jpg"
+          ]
+        },
+        "pink": {
+          "label": "Pink",
+          "image": "images/gift_hampers/pink_bottle_leather_sipper.png",
+          "images": [
+            "images/gift_hampers/pink_bottle_leather_sipper.png",
+            "images/bottles_inventory/pink_400_bottle.jpg",
+            "images/sipper_inventory/sipper_brown_strap.jpg"
+          ]
+      },
+        "blue": {
+          "label": "Blue",
+          "image": "images/gift_hampers/blue_bottle_leather_sipper.png",
+          "images": [
+            "images/gift_hampers/blue_bottle_leather_sipper.png",
+            "images/bottles_inventory/blue_400_bottle.jpg",
+            "images/sipper_inventory/sipper_brown_strap.jpg"
+          ]
+        }
+      }
+    },
+    {
+      "id": "classic-bottles-set",
+      "category": "gift-boxes",
+      "title": "Classic Everyday Bottle – 400 ml (set of 3)",
+      "price": 472,
+      "wasPrice": 675,
+      "description": "Small, stylish, and made for little sips. This mini insulated bottle is perfect when you want to carry a small serving of your favourite drink without taking up much space. Its compact size also makes it a charming addition to a table setting or a unique gifting choice.",
+      "specs": ["set of 3","Borosilicate glass", "400 ml"],
+      "perfectFor": ["Small servings", "Table settings", "Gifting"],
+      "instructions": ["Hand wash only"],
+      "image": "images/gift_hampers/classic_everyday_bottle_set.png",
+      "images":[
+        "images/gift_hampers/classic_everyday_bottle_set.png",
+        "images/bottles_inventory/blue_400_bottle.jpg",
+        "images/bottles_inventory/pink_400_bottle.jpg",
+        "images/bottles_inventory/yellow_400_bottle.jpg"
+      ],
+      "alt": "classic bottle set"
+    },
+    {
+      "id": "classic-mini-bottle-leather-grip-sipper-set",
+      "category": "gift-boxes",
+      "title": "Classic/Mini Bottle & Leather Grip Sipper Gift Set",
+      "price": 577,
+      "wasPrice": 825,
+      "description": "A ready-to-gift pairing of our everyday glass bottle, Small, stylish, and made for little sips and leather gripped sipper — curated in matching colours for personal use or gifting.",
+      "specs": ["400 ml bottle + sipper + 150 ml Mini bottle", "Borosilicate glass"],
+      "perfectFor": ["Gifting", "Office", "Travel"],
+      "instructions": ["Hand wash only", "Not for hot liquids"],
+      "image": "images/gift_hampers/classic-mini-sipper/leather-sipper/peach-yellow-leather-sipper.png",
+      "alt": "Bottle and sipper gift set",
+      "colors": {
+        "yellow-peach": {
+          "label": "Yellow-Peach",
+          "image": "images/gift_hampers/classic-mini-sipper/leather-sipper/peach-yellow-leather-sipper.png",
+          "images": [
+            "images/gift_hampers/classic-mini-sipper/leather-sipper/peach-yellow-leather-sipper.png",
+            "images/bottles_inventory/yellow_400_bottle.jpg",
+            "images/bottles_inventory/peach_150_mini_bottle.png",
+            "images/sipper_inventory/sipper_brown_strap.jpg"
+          ]
+        },
+        "pink-peach": {
+          "label": "Pink-Peach",
+          "image": "images/gift_hampers/classic-mini-sipper/leather-sipper/peach-pink-leather-sipper.png",
+          "images": [
+           "images/gift_hampers/classic-mini-sipper/leather-sipper/peach-pink-leather-sipper.png",
+            "images/bottles_inventory/pink_400_bottle.jpg",
+            "images/bottles_inventory/peach_150_mini_bottle.png",
+            "images/sipper_inventory/sipper_brown_strap.jpg"
+          ]
+      },
+        "blue-peach": {
+          "label": "Blue-Peach",
+          "image": "images/gift_hampers/classic-mini-sipper/leather-sipper/peach-blue-leather-sipper.png",
+          "images": [
+            "images/gift_hampers/classic-mini-sipper/leather-sipper/peach-blue-leather-sipper.png",
+            "images/bottles_inventory/blue_400_bottle.jpg",
+            "images/bottles_inventory/peach_150_mini_bottle.png",
+            "images/sipper_inventory/sipper_brown_strap.jpg"
+          ]
+        },
+        "yellow-green": {
+          "label": "Yellow-Green",
+          "image": "images/gift_hampers/classic-mini-sipper/leather-sipper/green-yellow-leather-sipper.png",
+          "images": [
+            "images/gift_hampers/classic-mini-sipper/leather-sipper/green-yellow-leather-sipper.png",
+            "images/bottles_inventory/yellow_400_bottle.jpg",
+            "images/bottles_inventory/green_150_mini_bottle.jpeg",
+            "images/sipper_inventory/sipper_brown_strap.jpg"
+          ]
+        },
+        "pink-green": {
+          "label": "Pink-Green",
+          "image": "images/gift_hampers/classic-mini-sipper/leather-sipper/green-pink-leather-sipper.png",
+          "images": [
+            "images/gift_hampers/classic-mini-sipper/leather-sipper/green-pink-leather-sipper.png",
+            "images/bottles_inventory/pink_400_bottle.jpg",
+             "images/bottles_inventory/green_150_mini_bottle.jpeg",
+            "images/sipper_inventory/sipper_brown_strap.jpg"
+          ]
+      },
+        "blue-green": {
+          "label": "Blue-Green",
+          "image": "images/gift_hampers/classic-mini-sipper/leather-sipper/green-blue-leather-sipper.png",
+          "images": [
+            "images/gift_hampers/classic-mini-sipper/leather-sipper/green-blue-leather-sipper.png",
+            "images/bottles_inventory/blue_400_bottle.jpg",
+             "images/bottles_inventory/green_150_mini_bottle.jpeg",
+            "images/sipper_inventory/sipper_brown_strap.jpg"
+          ]
+        },
+        "yellow-blue": {
+          "label": "Yellow-Blue",
+          "image": "images/gift_hampers/classic-mini-sipper/leather-sipper/blue-yellow-leather-sipper.png",
+          "images": [
+            "images/gift_hampers/classic-mini-sipper/leather-sipper/blue-yellow-leather-sipper.png",
+            "images/bottles_inventory/yellow_400_bottle.jpg",
+            "images/bottles_inventory/blue_150_mini_bottle.png",
+            "images/sipper_inventory/sipper_brown_strap.jpg"
+          ]
+        },
+        "pink-blue": {
+          "label": "Pink-Blue",
+          "image": "images/gift_hampers/classic-mini-sipper/leather-sipper/blue-pink-leather-sipper.png",
+          "images": [
+            "images/gift_hampers/classic-mini-sipper/leather-sipper/blue-pink-leather-sipper.png",
+            "images/bottles_inventory/pink_400_bottle.jpg",
+             "images/bottles_inventory/blue_150_mini_bottle.png",
+            "images/sipper_inventory/sipper_brown_strap.jpg"
+          ]
+      },
+        "blue-blue": {
+          "label": "Blue-Blue",
+          "image": "images/gift_hampers/classic-mini-sipper/leather-sipper/blue-blue-leather-sipper.png",
+          "images": [
+            "images/gift_hampers/classic-mini-sipper/leather-sipper/blue-blue-leather-sipper.png",
+            "images/bottles_inventory/blue_400_bottle.jpg",
+             "images/bottles_inventory/blue_150_mini_bottle.png",
+            "images/sipper_inventory/sipper_brown_strap.jpg"
+          ]
+        }
+      }
+    },
+    {
+      "id": "mini-bottle-sipper-set",
+      "category": "gift-boxes",
+      "title": "Mini Bottle & Sipper Gift Set",
+      "price": 520,
+      "wasPrice": 650,
+      "description": "A ready-to-gift pairing of our mini glass bottle and sipper — curated in matching colours for personal use or gifting.",
+      "specs": ["150 ml bottle + sipper", "Borosilicate glass"],
+      "perfectFor": ["Gifting", "Office", "Travel"],
+      "instructions": ["Hand wash only", "Not for hot liquids"],
+      "image": "images/gift_hampers/transparent-mini/green-transparent-sipper.png",
+      "alt": "Bottle and sipper gift set",
+      "colors": {
+        "yellow": {
+          "label": "Green",
+          "image": "images/gift_hampers/transparent-mini/green-transparent-sipper.png",
+          "images": [
+            "images/gift_hampers/transparent-mini/green-transparent-sipper.png",
+            "images/bottles_inventory/green_150_bottle.jpg",
+            "images/sipper_inventory/white_glass_sipper.jpg"
+          ]
+        },
+        "pink": {
+          "label": "Peach",
+          "image": "images/gift_hampers/transparent-mini/peach-transparent-sipper.png",
+          "images": [
+            "images/gift_hampers/transparent-mini/peach-transparent-sipper.png",
+            "images/bottles_inventory/peach_150_bottle.jpg",
+            "images/sipper_inventory/white_glass_sipper.jpg"
+          ]
+      },
+        "blue": {
+          "label": "Blue",
+          "image": "images/gift_hampers/transparent-mini/blue-transparent-sipper.png",
+          "images": [
+            "images/gift_hampers/transparent-mini/blue-transparent-sipper.png",
+            "images/bottles_inventory/blue_150_bottle.jpg",
+            "images/sipper_inventory/white_glass_sipper.jpg"
+          ]
+        }
+      }
+    },
+    {
+      "id": "classic-mini-bottle-transparent-sipper-set",
+      "category": "gift-boxes",
+      "title": "Classic/Mini Bottle & Transparent Sipper Gift Set",
+      "price": 577,
+      "wasPrice": 825,
+      "description": "A ready-to-gift pairing of our everyday glass bottle, Small, stylish, and made for little sips and sipper — curated in matching colours for personal use or gifting.",
+      "specs": ["400 ml bottle + sipper + 150 ml Mini bottle", "Borosilicate glass"],
+      "perfectFor": ["Gifting", "Office", "Travel"],
+      "instructions": ["Hand wash only", "Not for hot liquids"],
+      "image": "images/gift_hampers/classic-mini-sipper/transparent/peach-yellow-transparent-sipper.png",
+      "alt": "Bottle and sipper gift set",
+      "colors": {
+        "yellow-peach": {
+          "label": "Yellow-Peach",
+          "image": "images/gift_hampers/classic-mini-sipper/transparent/peach-yellow-transparent-sipper.png",
+          "images": [
+            "images/gift_hampers/classic-mini-sipper/transparent/peach-yellow-transparent-sipper.png",
+            "images/bottles_inventory/yellow_400_bottle.jpg",
+            "images/bottles_inventory/peach_150_mini_bottle.png",
+            "images/sipper_inventory/white_glass_sipper.jpg"
+          ]
+        },
+        "pink-peach": {
+          "label": "Pink-Peach",
+          "image": "images/gift_hampers/classic-mini-sipper/transparent/peach-pink-transparent-sipper.png",
+          "images": [
+           "images/gift_hampers/classic-mini-sipper/transparent/peach-pink-transparent-sipper.png",
+            "images/bottles_inventory/pink_400_bottle.jpg",
+            "images/bottles_inventory/peach_150_mini_bottle.png",
+            "images/sipper_inventory/white_glass_sipper.jpg"
+          ]
+      },
+        "blue-peach": {
+          "label": "Blue-Peach",
+          "image": "images/gift_hampers/classic-mini-sipper/transparent/peach-blue-transparent-sipper.png",
+          "images": [
+            "images/gift_hampers/classic-mini-sipper/transparent/peach-blue-transparent-sipper.png",
+            "images/bottles_inventory/blue_400_bottle.jpg",
+            "images/bottles_inventory/peach_150_mini_bottle.png",
+            "images/sipper_inventory/white_glass_sipper.jpg"
+          ]
+        },
+        "yellow-green": {
+          "label": "Yellow-Green",
+          "image": "images/gift_hampers/classic-mini-sipper/transparent/green-yellow-transparent-sipper.png",
+          "images": [
+            "images/gift_hampers/classic-mini-sipper/transparent/green-yellow-transparent-sipper.png",
+            "images/bottles_inventory/yellow_400_bottle.jpg",
+            "images/bottles_inventory/green_150_mini_bottle.jpeg",
+            "images/sipper_inventory/white_glass_sipper.jpg"
+          ]
+        },
+        "pink-green": {
+          "label": "Pink-Green",
+          "image": "images/gift_hampers/classic-mini-sipper/transparent/green-pink-transparent-sipper.png",
+          "images": [
+            "images/gift_hampers/classic-mini-sipper/transparent/green-pink-transparent-sipper.png",
+            "images/bottles_inventory/pink_400_bottle.jpg",
+             "images/bottles_inventory/green_150_mini_bottle.jpeg",
+            "images/sipper_inventory/white_glass_sipper.jpg"
+          ]
+      },
+        "blue-green": {
+          "label": "Blue-Green",
+          "image": "images/gift_hampers/classic-mini-sipper/transparent/green-blue-transparent-sipper.png",
+          "images": [
+            "images/gift_hampers/classic-mini-sipper/transparent/green-blue-transparent-sipper.png",
+            "images/bottles_inventory/blue_400_bottle.jpg",
+             "images/bottles_inventory/green_150_mini_bottle.jpeg",
+            "images/sipper_inventory/white_glass_sipper.jpg"
+          ]
+        },
+        "yellow-blue": {
+          "label": "Yellow-Blue",
+          "image": "images/gift_hampers/classic-mini-sipper/transparent/blue-yellow-transparent-sipper.png",
+          "images": [
+            "images/gift_hampers/classic-mini-sipper/transparent/blue-yellow-transparent-sipper.png",
+            "images/bottles_inventory/yellow_400_bottle.jpg",
+            "images/bottles_inventory/blue_150_mini_bottle.png",
+            "images/sipper_inventory/white_glass_sipper.jpg"
+          ]
+        },
+        "pink-blue": {
+          "label": "Pink-Blue",
+          "image": "images/gift_hampers/classic-mini-sipper/transparent/blue-pink-transparent-sipper.png",
+          "images": [
+            "images/gift_hampers/classic-mini-sipper/transparent/blue-pink-transparent-sipper.png",
+            "images/bottles_inventory/pink_400_bottle.jpg",
+             "images/bottles_inventory/blue_150_mini_bottle.png",
+            "images/sipper_inventory/white_glass_sipper.jpg"
+          ]
+      },
+        "blue-blue": {
+          "label": "Blue-Blue",
+          "image": "images/gift_hampers/classic-mini-sipper/transparent/blue-blue-transparent-sipper.png",
+          "images": [
+            "images/gift_hampers/classic-mini-sipper/transparent/blue-blue-transparent-sipper.png",
+            "images/bottles_inventory/blue_400_bottle.jpg",
+             "images/bottles_inventory/blue_150_mini_bottle.png",
+            "images/sipper_inventory/white_glass_sipper.jpg"
+          ]
+        }
+      }
+    },
+    {
+      "id": "mini-bottle-leather-sipper-set",
+      "category": "gift-boxes",
+      "title": "Mini Bottle & Leather Grip Sipper Gift Set",
+      "price": 520,
+      "wasPrice": 650,
+      "description": "A ready-to-gift pairing of our mini glass bottle and leather grip sipper — curated in matching colours for personal use or gifting.",
+      "specs": ["150 ml bottle + sipper", "Borosilicate glass"],
+      "perfectFor": ["Gifting", "Office", "Travel"],
+      "instructions": ["Hand wash only", "Not for hot liquids"],
+      "image": "images/gift_hampers/leather-mini/green-mini-leather-sipper.png",
+      "alt": "Bottle and sipper gift set",
+      "colors": {
+        "green": {
+          "label": "Green",
+          "image": "images/gift_hampers/leather-mini/green-mini-leather-sipper.png",
+          "images": [
+            "images/gift_hampers/leather-mini/green-mini-leather-sipper.png",
+            "images/bottles_inventory/green_150_mini_bottle.jpeg",
+            "images/sipper_inventory/sipper_brown_strap.jpg"
+          ]
+        },
+        "peach": {
+          "label": "Peach",
+          "image": "images/gift_hampers/leather-mini/peach-mini-leather-sipper.png",
+          "images": [
+            "images/gift_hampers/leather-mini/peach-mini-leather-sipper.png",
+            "images/bottles_inventory/peach_150_mini_bottle.jpg",
+            "images/sipper_inventory/sipper_brown_strap.jpg"
+          ]
+      },
+        "blue": {
+          "label": "Blue",
+          "image": "images/gift_hampers/leather-mini/blue-mini-leather-sipper.png",
+          "images": [
+            "images/gift_hampers/leather-mini/blue-mini-leather-sipper.png",
+            "images/bottles_inventory/blue_150_mini_bottle.jpg",
+            "images/sipper_inventory/sipper_brown_strap.jpg"
+          ]
+        }
+      }
+    },
+    {
+      "id": "mini-classic-bottle-set",
+      "category": "gift-boxes",
+      "title": "Mini Bottle & Classic Bottle Gift Set",
+      "price": 460,
+      "wasPrice": 575,
+      "description": "A ready-to-gift pairing of our mini glass bottle and classic bottle set — curated in matching colours for personal use or gifting.",
+      "specs": ["150 ml bottle + sipper", "Borosilicate glass"],
+      "perfectFor": ["Gifting", "Office", "Travel"],
+      "instructions": ["Hand wash only", "Not for hot liquids"],
+      "image": "images/gift_hampers/classic-mini-bottle/peach-yellow-bottle.png",
+      "alt": "Bottle and sipper gift set",
+      "colors": {
+        "yellow-peach": {
+          "label": "Yellow-Peach",
+          "image": "images/gift_hampers/classic-mini-bottle/peach-yellow-bottle.png",
+          "images": [
+            "images/gift_hampers/classic-mini-bottle/peach-yellow-bottle.png",
+            "images/bottles_inventory/yellow_400_bottle.jpg",
+            "images/bottles_inventory/peach_150_mini_bottle.png"
+          ]
+        },
+        "pink-peach": {
+          "label": "Pink-Peach",
+          "image": "images/gift_hampers/classic-mini-bottle/peach-pink-bottle.png",
+          "images": [
+            "images/gift_hampers/classic-mini-bottle/peach-pink-bottle.png",
+            "images/bottles_inventory/pink_400_bottle.jpg",
+            "images/bottles_inventory/peach_150_mini_bottle.png"
+          ]
+      },
+        "blue-peach": {
+          "label": "Blue-peach",
+          "image": "images/gift_hampers/classic-mini-bottle/peach-blue-bottle.png",
+          "images": [
+            "images/gift_hampers/classic-mini-bottle/peach-blue-bottle.png",
+            "images/bottles_inventory/blue_400_bottle.jpg",
+             "images/bottles_inventory/peach_150_mini_bottle.png"
+          ]
+        },
+         "yellow-green": {
+          "label": "Yellow-Green",
+          "image": "images/gift_hampers/classic-mini-bottle/green-yellow-bottle.png",
+          "images": [
+            "images/gift_hampers/classic-mini-bottle/green-yellow-bottle.png",
+            "images/bottles_inventory/yellow_400_bottle.jpg",
+            "images/bottles_inventory/green_150_mini_bottle.png"
+          ]
+        },
+        "pink-green": {
+          "label": "Pink-Green",
+          "image": "images/gift_hampers/classic-mini-bottle/green-pink-bottle.png",
+          "images": [
+            "images/gift_hampers/classic-mini-bottle/green-pink-bottle.png",
+            "images/bottles_inventory/pink_400_bottle.jpg",
+            "images/bottles_inventory/green_150_mini_bottle.png"
+          ]
+      },
+        "blue-green": {
+          "label": "Blue-Green",
+          "image": "images/gift_hampers/classic-mini-bottle/green-blue-bottle.png",
+          "images": [
+            "images/gift_hampers/classic-mini-bottle/green-blue-bottle.png",
+            "images/bottles_inventory/blue_400_bottle.jpg",
+             "images/bottles_inventory/green_150_mini_bottle.png"
+          ]
+        },
+         "yellow-blue": {
+          "label": "Yellow-Blue",
+          "image": "images/gift_hampers/classic-mini-bottle/blue-yellow-bottle.png",
+          "images": [
+            "images/gift_hampers/classic-mini-bottle/blue-yellow-bottle.png",
+            "images/bottles_inventory/yellow_400_bottle.jpg",
+            "images/bottles_inventory/blue_150_mini_bottle.png"
+          ]
+        },
+        "pink-blue": {
+          "label": "Pink-Blue",
+          "image": "images/gift_hampers/classic-mini-bottle/blue-pink-bottle.png",
+          "images": [
+            "images/gift_hampers/classic-mini-bottle/blue-pink-bottle.png",
+            "images/bottles_inventory/pink_400_bottle.jpg",
+            "images/bottles_inventory/blue_150_mini_bottle.png"
+          ]
+      },
+        "blue-blue": {
+          "label": "Blue-Blue",
+          "image": "images/gift_hampers/classic-mini-bottle/blue-blue-bottle.png",
+          "images": [
+            "images/gift_hampers/classic-mini-bottle/blue-blue-bottle.png",
+            "images/bottles_inventory/blue_400_bottle.jpg",
+             "images/bottles_inventory/blue_150_mini_bottle.png"
+          ]
+        }
+      }
+    },
+     {
+      "id": "sipper-set",
+      "category": "gift-boxes",
+      "title": "Sipper Set",
+      "price": 472,
+      "wasPrice": 675,
+      "description": "Sipper set of transparent and leather grip sippers for your everyday needs.",
+      "specs": ["Transparent", "500 ml - 750lm","Leather Grip"],
+      "perfectFor": ["Work", "Travel", "Outings", "Gifting"],
+      "instructions": ["Hand wash only"],
+      "image": "images/gift_hampers/leather-transparent-sipper.png",
+      "images":[
+        "images/gift_hampers/leather-transparent-sipper.png",
+       "images/gift_hampers/leather-transparent-sipper-1.png",
+        "images/gift_hampers/leather-transparent-sipper-2.png"
+      ],
+      "alt": "classic bottle set"
     }
+
+    
   ]
 }

@@ -3,7 +3,7 @@
     bottles: { label: "Bottles", page: "bottles.html" },
     sippers: { label: "Sippers", page: "sippers.html" },
     kitchenware: { label: "Kitchen Ware", page: "insulation-pads.html" },
-    "gift-boxes": { label: "Gift Boxes", page: "../index.html#category-gift-boxes" },
+    "gift-boxes": { label: "Gift Boxes", page: "giftBoxes.html" },
   };
 
   function esc(text) {
@@ -13,7 +13,18 @@
       .replace(/"/g, "&quot;");
   }
 
-  function productImages(product) {
+  function colorImages(color) {
+    if (Array.isArray(color?.images) && color.images.length) return color.images.slice();
+    if (color?.image) return [color.image];
+    return [];
+  }
+
+  function productImages(product, colorKey) {
+    if (product.colors) {
+      const color = colorKey ? product.colors[colorKey] : Object.values(product.colors)[0];
+      const files = colorImages(color);
+      if (files.length) return files;
+    }
     if (Array.isArray(product.images) && product.images.length) return product.images.slice();
     return [product.image];
   }
@@ -179,13 +190,13 @@
     </article>`;
 
     const gallery = main.querySelector("[data-product-gallery]");
-    const carousel = initManualCarousel(gallery, productImages(product), root, product.alt || product.title);
+    const label = product.alt || product.title;
+    initManualCarousel(gallery, productImages(product), root, label);
 
     if (product.colors) {
       const select = main.querySelector("[data-color-select]");
       select?.addEventListener("change", () => {
-        const next = product.colors[select.value]?.image;
-        if (next) carousel.setPrimary(next);
+        initManualCarousel(gallery, productImages(product, select.value), root, label);
       });
     }
   }
