@@ -72,7 +72,9 @@
       const select = card.querySelector("[data-color-select]");
       if (!image || !select) return;
       select.addEventListener("change", () => {
-        const next = product.colors[select.value]?.image;
+        const color = product.colors[select.value];
+        const next =
+          (Array.isArray(color?.images) && color.images[0]) || color?.image;
         if (next) image.src = `${root}${next}`;
       });
     });
