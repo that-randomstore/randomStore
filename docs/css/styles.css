@@ -1164,23 +1164,23 @@ body.cart-open {
   box-sizing: border-box;
 }
 
-/* Gift box images — softer framing so sets don't feel cramped or oversized */
-.product-card[data-category="gift-boxes"] .product-card__link {
+/* Combo set images — softer framing so sets don't feel cramped or oversized */
+.product-card[data-category="combo-sets"] .product-card__link {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.product-detail[data-category="gift-boxes"] .product-detail__media:not(.feature-slideshow) {
+.product-detail[data-category="combo-sets"] .product-detail__media:not(.feature-slideshow) {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.product-card[data-category="gift-boxes"] .product-card__media img,
-.product-detail[data-category="gift-boxes"] .product-card__media > img,
-.product-detail[data-category="gift-boxes"] .feature-slideshow__frame img,
-#category-gift-boxes .feature-slideshow__frame img {
+.product-card[data-category="combo-sets"] .product-card__media img,
+.product-detail[data-category="combo-sets"] .product-card__media > img,
+.product-detail[data-category="combo-sets"] .feature-slideshow__frame img,
+#category-combo-sets .feature-slideshow__frame img {
   width: 100%;
   height: 100%;
   max-width: none;

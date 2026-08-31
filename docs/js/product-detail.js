@@ -3,7 +3,7 @@
     bottles: { label: "Bottles", page: "bottles.html" },
     sippers: { label: "Sippers", page: "sippers.html" },
     kitchenware: { label: "Kitchen Ware", page: "insulation-pads.html" },
-    "gift-boxes": { label: "Gift Boxes", page: "giftBoxes.html" },
+    "combo-sets": { label: "Combo Sets", page: "comboSets.html" },
   };
 
   function esc(text) {
