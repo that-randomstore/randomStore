@@ -116,7 +116,7 @@
     },
     {
       "id": "insulation-pads-set-1",
-      "category": "gift-boxes",
+      "category": "combo-sets",
       "title": "Round+Squared Patterned Insulation Pad",
       "price": 420,
       "wasPrice": 525,
@@ -134,7 +134,7 @@
     },
     {
       "id": "insulation-pads-set-2",
-      "category": "gift-boxes",
+      "category": "combo-sets",
       "title": "Round+Squared Patterned Insulation Pad",
       "price": 420,
       "wasPrice": 525,
@@ -152,7 +152,7 @@
     },
     {
       "id": "mini-bottles-set",
-      "category": "gift-boxes",
+      "category": "combo-sets",
       "title": "Mini Insulated Bottle – 150 ml (set of 3)",
       "price": 735,
       "wasPrice": 1050,
@@ -171,7 +171,7 @@
     },
     {
       "id": "classic-bottle-sipper-set",
-      "category": "gift-boxes",
+      "category": "combo-sets",
       "title": "Bottle & Sipper Gift Set",
       "price": 525,
       "wasPrice": 750,
@@ -213,7 +213,7 @@
     },
     {
       "id": "classic-bottle-leather-grip-sipper-set",
-      "category": "gift-boxes",
+      "category": "combo-sets",
       "title": "Bottle & Leather Grip Sipper Gift Set",
       "price": 525,
       "wasPrice": 750,
@@ -255,7 +255,7 @@
     },
     {
       "id": "classic-bottles-set",
-      "category": "gift-boxes",
+      "category": "combo-sets",
       "title": "Classic Everyday Bottle – 400 ml (set of 3)",
       "price": 472,
       "wasPrice": 675,
@@ -274,7 +274,7 @@
     },
     {
       "id": "classic-mini-bottle-leather-grip-sipper-set",
-      "category": "gift-boxes",
+      "category": "combo-sets",
       "title": "Classic/Mini Bottle & Leather Grip Sipper Gift Set",
       "price": 577,
       "wasPrice": 825,
@@ -379,7 +379,7 @@
     },
     {
       "id": "mini-bottle-sipper-set",
-      "category": "gift-boxes",
+      "category": "combo-sets",
       "title": "Mini Bottle & Sipper Gift Set",
       "price": 520,
       "wasPrice": 650,
@@ -421,7 +421,7 @@
     },
     {
       "id": "classic-mini-bottle-transparent-sipper-set",
-      "category": "gift-boxes",
+      "category": "combo-sets",
       "title": "Classic/Mini Bottle & Transparent Sipper Gift Set",
       "price": 577,
       "wasPrice": 825,
@@ -526,7 +526,7 @@
     },
     {
       "id": "mini-bottle-leather-sipper-set",
-      "category": "gift-boxes",
+      "category": "combo-sets",
       "title": "Mini Bottle & Leather Grip Sipper Gift Set",
       "price": 520,
       "wasPrice": 650,
@@ -568,7 +568,7 @@
     },
     {
       "id": "mini-classic-bottle-set",
-      "category": "gift-boxes",
+      "category": "combo-sets",
       "title": "Mini Bottle & Classic Bottle Gift Set",
       "price": 460,
       "wasPrice": 575,
@@ -664,7 +664,7 @@
     },
      {
       "id": "sipper-set",
-      "category": "gift-boxes",
+      "category": "combo-sets",
       "title": "Sipper Set",
       "price": 472,
       "wasPrice": 675,
